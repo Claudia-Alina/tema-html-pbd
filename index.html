@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueBrew Coffee</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #1b1f23;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f3557, #174a78);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #d9e2ec;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0f3557;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #f28c28;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #0f3557;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .accent {
+            color: #f28c28;
+            font-weight: bold;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-row img {
+            width: 100%;
+            max-width: 460px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        th, td {
+            border: 1px solid #d9e2ec;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0f3557;
+            color: white;
+        }
+
+        .row1 { background-color: #eaf2fb; }
+        .row2 { background-color: #fdf1e7; }
+        .row3 { background-color: #eef7ee; }
+        .row4 { background-color: #f8eef7; }
+
+        footer {
+            text-align: center;
+            background-color: #0f3557;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        ul, ol {
+            padding-left: 22px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Secțiunea principală evidențiază stilul cafenelei și introduce tema paginii. -->
+    <header>
+        <h1>BlueBrew Coffee</h1>
+        <p>Locul unde cafeaua bună întâlnește un design simplu și elegant.</p>
+    </header>
+
+    <nav>
+        <a href="#despre">Despre</a>
+        <a href="#sortimente">Sortimente</a>
+        <a href="#program">Program</a>
+        <a href="#galerie">Galerie</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="card" id="despre">
+            <h2>Despre noi</h2>
+            <p class="center-text">
+                La <b>BlueBrew Coffee</b> punem accent pe boabe de calitate, băuturi echilibrate și o experiență relaxantă.
+                Atmosfera este <i>caldă, modernă și prietenoasă</i>, potrivită pentru studiu, întâlniri sau o pauză bine meritată.
+            </p>
+            <p>
+                În fiecare zi pregătim cafea de specialitate, deserturi simple și băuturi de sezon.
+                Dacă vrei să afli mai multe despre cultura cafelei, poți vizita
+                <a href="https://www.specialtycoffeeassociation.org/" target="_blank">Specialty Coffee Association</a>.
+            </p>
+        </section>
+
+        <section class="card" id="sortimente">
+            <h2>Ce poți încerca</h2>
+
+            <h3>Sortimente populare</h3>
+            <ul>
+                <li>Espresso</li>
+                <li>Cappuccino</li>
+                <li>Flat White</li>
+                <li>Latte cu vanilie</li>
+            </ul>
+
+            <h3>Pașii unei cafele reușite</h3>
+            <ol>
+                <li>Alegerea boabelor potrivite</li>
+                <li>Măcinarea corectă</li>
+                <li>Extracția echilibrată</li>
+                <li>Servirea imediată</li>
+            </ol>
+        </section>
+
+        <section class="card" id="program">
+            <h2>Program și meniu orientativ</h2>
+            <p>
+                Mai jos este un mic tabel cu produse și intervale recomandate. Fiecare linie are altă culoare,
+                iar în ultima linie există o <span class="accent">îmbinare de celule</span>.
+            </p>
+
+            <!-- Tabelul include culori diferite pe fiecare rând și o îmbinare de celule pentru cerința temei. -->
+            <table>
+                <tr>
+                    <th>Produs</th>
+                    <th>Dimineața</th>
+                    <th>După-amiaza</th>
+                    <th>Preț</th>
+                </tr>
+                <tr class="row1">
+                    <td>Espresso</td>
+                    <td>Recomandat</td>
+                    <td>Bun pentru un boost rapid</td>
+                    <td>8 lei</td>
+                </tr>
+                <tr class="row2">
+                    <td>Cappuccino</td>
+                    <td>Foarte popular</td>
+                    <td>Textură fină și gust echilibrat</td>
+                    <td>14 lei</td>
+                </tr>
+                <tr class="row3">
+                    <td>Latte</td>
+                    <td>Potrivit</td>
+                    <td>Ideal pentru o pauză lungă</td>
+                    <td>15 lei</td>
+                </tr>
+                <tr class="row4">
+                    <td colspan="3"><b>Ofertă specială:</b> Orice cafea + croissant</td>
+                    <td><b>20 lei</b></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="card" id="galerie">
+            <h2>Galerie</h2>
+            <p>
+                Prima imagine este încărcată dintr-un folder local, iar a doua folosește o adresă de pe internet.
+            </p>
+
+            <div class="image-row">
+                <div>
+                    <h3 class="center-text">Imagine locală</h3>
+                    <img src="images/cafea-locala.jpg" alt="Cafea servită într-o cafenea modernă">
+                </div>
+
+                <div>
+                    <h3 class="center-text">Imagine de pe internet</h3>
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80" alt="Boabe de cafea și ceașcă">
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 BlueBrew Coffee - pagină demonstrativă realizată în HTML</p>
+    </footer>
+
+</body>
+</html>
