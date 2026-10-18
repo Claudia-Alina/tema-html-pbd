@@ -309,6 +309,10 @@
 </head>
 <body>
     <div class="page" id="acasa">
+	    <!-- Am făcut bara de navigare să rămână sus când se derulează pagina,
+			 ca să se poată accesa oricând secțiunile fără să trebuiască întoarcerea la început.
+			 Am ajustat și poziționarea secțiunilor ca titlurile să nu fie
+			 acoperite de header atunci când se apăsă pe linkuri. -->
         <header>
             <div class="navigation">
                 <a class="logo" href="#acasa">BLUEBREW</a>
@@ -320,8 +324,9 @@
                 </nav>
             </div>
         </header>
-
-        <!-- Imaginea principală este încărcată local, direct din folderul images. -->
+        <!-- Am pus imaginea principală aici, imediat sub bara de navigare.
+             Am încărcat-o din folderul images și i-am păstrat proporțiile prin CSS.
+             Totodată, am limitat și lățimea maximă ca să nu se întindă prea mult pe ecranele mari. -->
         <div class="hero">
             <img src="images/bluebrew.png" alt="BlueBrew, cafenea cu espressor albastru și ilustrație" fetchpriority="high">
         </div>
@@ -357,8 +362,10 @@
                         <li>Croissante și deserturi</li>
                     </ul>
                 </div>
-
-                <!-- Fiecare rând are propria culoare, iar oferta folosește colspan pentru îmbinarea celulelor. -->
+                <!-- Pentru meniu am folosit un tabel cu produsele, descrierile și prețurile.
+					 Am ales culori de fundal diferite pentru fiecare rând, folosind clase CSS.
+					 La ultima ofertă am unit primele două celule cu colspan="2",
+					 pentru că nu mai era nevoie de o descriere separată. -->
                 <div class="table-wrap">
                     <table>
                         <thead>
