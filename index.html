@@ -24,17 +24,20 @@
         }
 
         .page {
-            max-width: 1200px;
-            margin: 0 auto;
-            overflow: hidden;
+            width: 100%;
         }
 
         header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
             background: var(--blue);
             color: #fff;
         }
 
         .navigation {
+            max-width: 1700px;
+            margin: 0 auto;
             min-height: 78px;
             padding: 18px 6%;
             display: flex;
@@ -76,15 +79,22 @@
             padding: 10px 18px;
         }
 
+        .hero {
+            display: flex;
+            justify-content: center;
+            background: var(--blue);
+        }
+
         .hero img {
             display: block;
             width: 100%;
+            max-width: 1100px;
             height: auto;
         }
 
         .blue-line { height: 38px; background: var(--blue); }
 
-        section { scroll-margin-top: 20px; }
+        section, footer { scroll-margin-top: 96px; }
 
         .about {
             background: var(--cream);
@@ -273,6 +283,7 @@
         }
 
         @media (max-width: 850px) {
+            section, footer { scroll-margin-top: 145px; }
             .navigation { flex-direction: column; gap: 18px; }
             nav { justify-content: center; gap: 15px; }
             .about, .steps { grid-template-columns: 1fr; }
@@ -285,6 +296,9 @@
         }
 
         @media (max-width: 480px) {
+            table { min-width: 0; font-size: 12px; }
+            th, td { padding: 12px 8px; }
+            th { font-size: 10px; }
             .logo { font-size: 28px; }
             nav a { font-size: 10px; }
             .nav-special { padding: 8px 11px; }
